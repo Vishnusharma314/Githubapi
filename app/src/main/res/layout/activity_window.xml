@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FC8A8A"
+    android:id="@+id/drawer"
+    tools:context=".Window">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9D9E9E"
+                app:tabTextColor="#FFFFFF"
+                android:id="@+id/tab_layout"
+                app:tabIndicatorColor="#FFFFFF">
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="100dp"
+                    android:layout_weight="1"
+                    android:text="Profile"
+                    android:layout_height="100dp" />
+                <android.support.design.widget.TabItem
+                    android:layout_width="100dp"
+                    android:layout_weight="1"
+                    android:text="Repositiory"
+                    android:layout_height="100dp" />
+            </android.support.design.widget.TabLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="10dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
